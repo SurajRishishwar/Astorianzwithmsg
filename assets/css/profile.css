@@ -1,0 +1,148 @@
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+.prcontainer{
+    width: 100%;
+    padding-top:10px;
+    height: auto;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.prcontainer .form{
+    
+    width: 800px;
+    margin: 50px 20px;
+    text-align: left;
+    height: auto;
+    padding:20px;
+    border-radius: 25px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.collapsible {
+    background-color: rgb(150, 149, 149);;
+    color: white;
+    padding: 18px;
+    border-radius: 20px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+  }
+  
+
+  
+  .collapsible:after {
+    content: 'Edit';
+    text-decoration: underline;
+    cursor:pointer;
+    color: white;
+    float: right;
+    font-size: 17px;
+    margin-left: 5px auto;
+    
+  }
+  
+  .aactive:after {
+    content: "Close";
+    cursor: pointer;
+    font-size: 17px;
+    margin-left: 3px auto;
+  }
+  
+  .changedetails {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+
+  }
+  .prcontainer .form p{
+      margin:10px;
+      
+  }
+  .prcontainer .form .changedetails form{
+    
+      margin-top: 10px;
+  }
+  .prcontainer .form .changedetails form input{
+      padding:5px;
+      margin: 10px;
+      border: 1px solid #509afa;
+    
+  }
+  
+  .savebtn{
+      border-radius:25px;
+      font-family: Arial, Helvetica, sans-serif;
+      border: 1px solid #509afa;
+      font-size: 15px;
+      background-color:#b3d3fd;
+      cursor: pointer;
+      width: 100px;    
+     
+  }
+
+  .pheading{
+
+	align-items: center;
+	margin: 5px 0px;
+  }
+  .pcontentt{
+	text-align: center;
+	margin: auto;
+  font-size: 3rem;
+	width: fit-content;
+	font-family: monospace;
+  }
+  .imgpicker{
+    height: 250px;
+    width: 250px;
+    position: relative;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background:url(../img/userphoto.png);
+    background-size: 100% 100%;
+    margin:25px auto;
+    overflow: hidden;
+  }
+  .myimgg{
+    position: absolute;
+    bottom: 0;
+    outline: none;
+    color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 80px;
+    cursor: pointer;
+    transition: 0.5s;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .myimgg::-webkit-file-upload-button{
+    visibility: hidden;
+
+  }
+  .myimgg::before{
+    content:'Update';
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    margin-left: 15px;
+    color:#fff;
+    display: inline-block;
+  
+
+    
+  }
+  
+  /* .myimgg::after{
+    content:'Apply';
+    color: #fff;
+  
+    font-size: 15px;
+    position: absolute;
+    display: block;
+  } */
